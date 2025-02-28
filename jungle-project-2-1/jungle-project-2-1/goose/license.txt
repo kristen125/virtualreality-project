@@ -1,0 +1,11 @@
+Model Information:
+* title:	Goose
+* source:	https://sketchfab.com/3d-models/goose-3d68cfc98dfa4ed39d26df5b126791f0
+* author:	OlegPopka (https://sketchfab.com/OlegPotat)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Goose" (https://sketchfab.com/3d-models/goose-3d68cfc98dfa4ed39d26df5b126791f0) by OlegPopka (https://sketchfab.com/OlegPotat) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

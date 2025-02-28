@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+    <!-- Your custom JavaScript files -->
+    <script src="script.js"></script>
+    <script src="tree.js"></script>
+   <script src="move.js"></script>
+    <script src="cloud.js"></script>
+   
+    
+  </head>
+  <body>
+    <a-scene light="defaultLightsEnabled: false">
+        
+      <!-- Ambient Light -->
+      <a-entity light="type: ambient; intensity:0.65"></a-entity>
+
+      <!-- Light source -->
+      <a-box id="light_source" color="#7BC8A4" position="0 -2 0" opacity="0.100">
+        <a-sphere position="0 50 0" color="yellow" light="type:directional;castShadow:true;intensity:0.65"></a-sphere>
+      </a-box>
+
+      <!-- 3D models assets -->
+      <a-asset-item id="bird" src="birds/scene.gltf"></a-asset-item> 
+      <a-gltf-model src="#bird" scale="5 5 5" position="-20 30 0" animation-mixer></a-gltf-model>
+
+      <a-asset-item id="ell" src="elephant_ani/scenes.gltf"></a-asset-item> 
+      <a-gltf-model  src="#ell" position="1 0 4" rotation="0 110 0" animation-mixer scale="1 1 1"></a-gltf-model>
+
+      <a-asset-item id="whi" src="white_tiger/scene.gltf"></a-asset-item> 
+      <a-gltf-model  src="#whi" position="-3 0 7" animation-mixer scale="0.01 0.01 0.01"></a-gltf-model>
+
+      <a-asset-item id="non" src="white.glb"></a-asset-item> 
+      <a-gltf-model src="#" scale="0.1 0.1 0.1" position="-20 30 0" animation-mixer></a-gltf-model>
+
+      <a-asset-item id="goose" src="goose/scene.gltf"></a-asset-item> 
+      <a-gltf-model src="#goose" scale="10 10 10" position="-10 0 0" animation-mixer></a-gltf-model>
+
+      <a-asset-item id="big" src="big/scene.gltf"></a-asset-item> 
+      <a-gltf-model src="#big" scale="1 1 1" position="30 30 0" animation-mixer></a-gltf-model>
+
+      <a-asset-item id="nan" src="white.glb"></a-asset-item> 
+      <a-gltf-model src="#nan" position="5 40 -5" animation-mixer scale="0.1 0.1 0.1"></a-gltf-model>
+      <a-entity id="cursor" cursor="rayOrigin: mouse" position="0 0 -1"
+        
+      <!-- Sky background -->
+      <a-sky src="sky.jpg"></a-sky>
+
+      <!-- Environmental settings (forest preset) -->
+      <a-entity environment="preset: forest;"></a-entity>
+
+      <!-- Ground plane (with texture) -->
+      <a-plane src="grass.jpg" rotation="-90 0 0" position="0 0 -4" width="300" height="300" shadow="receive: true"></a-plane>
+
+      <!-- (Optional) Water surface -->
+      <!--<a-ocean color="#" ddwidth="15" depth="15" density="15" speed="1"></a-ocean>-->
+
+      <!-- Starry night sky -->
+     
+      
+        <a-cursor raycaster="objects:[clickable]">
+        </a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
